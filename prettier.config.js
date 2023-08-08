@@ -1,0 +1,20 @@
+/** @type {import("prettier").Config} */
+module.exports = {
+  endOfLine: "lf",
+  semi: true,
+  trailingComma: "all",
+  useTabs: false,
+  tabWidth: 2,
+  printWidth: 100,
+  singleQuote: false,
+  bracketSpacing: true,
+  arrowParens: "always",
+  importOrder: ["<THIRD_PARTY_MODULES>", "", "^[./]"],
+  importOrderSeparation: false,
+  importOrderSortSpecifiers: true,
+  importOrderBuiltinModulesToTop: true,
+  importOrderParserPlugins: ["typescript", "decorators-legacy"],
+  importOrderMergeDuplicateImports: true,
+  ImportOrderCombineTypeAndValueImports: true,
+  plugins: ["@trivago/prettier-plugin-sort-imports"],
+};
